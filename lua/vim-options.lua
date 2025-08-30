@@ -20,3 +20,11 @@ vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err")
 vim.keymap.set("n", "<leader>ff", ":!gofmt -w %<CR><CR>")
 vim.keymap.set("n", "<leader>pp", ":!prettier -w %<CR><CR>") -- prettier formatter
 
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+})
+
